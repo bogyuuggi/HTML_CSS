@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          	#container{
+      width : 600px;
+      margin : 10px auto;
+    }
+    table {
+      border : 2px solid #ccc;
+      border-collapse: collapse;
+    }
+    tr, td {
+      border : 2px solid #ccc;
+      padding : 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+    td {
+      width : 100px;
+    }
+    </style>
+</head>
+
+<body>
+    
+</body>
+</html>
+<script>
+    var text = prompt("원하는 단을 입력하세요"); 
+    document.write(text+"단");
+
+   document.write("<table>");
+
+    for(var i=text; i<=text; i++){
+    document.write("<tr>");
+    for(var j=1; j<=9; j++){				
+      document.write("<td>" + i + "*" + j + "=" + (i*j) + "</td>");				
+    }
+    document.write("</tr>");
+  }
+  document.write("</table>");
+</script>

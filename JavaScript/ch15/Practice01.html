@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="time"></div>
+</body>
+</html>
+<script>
+    let time = new Date;
+
+    // document.write(time.getFullYear() + "년<br>");
+    // document.write(time.getMonth()+1 + "월<br>");
+    // document.write(time.getDate() + "일<br>");
+
+    // document.write(time.toLocaleTimeString());
+
+    //<body>의 div태그에 값을 입력할 수 있게 해줌
+    // let obj = document.querySelector('.time');
+    // obj.innerHTML = time.toLocaleTimeString();
+
+    //특정 주기마다 해당 코드를 실행시켜주는 함수
+    // 1000= 1초
+    setInterval(now, 1000);
+
+    function now() {
+        let time = new Date;
+        let obj = document.querySelector('.time');
+        obj.innerHTML = time.toLocaleTimeString();
+    }
+</script>

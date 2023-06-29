@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bt2 {
+            display : none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="text">짱구는 못말려</div>
+    <!-- <button onclick="show()">보이기</button> -->
+    <button class="bt" onclick="hide()">숨기기</button>
+    <button class="bt2" onclick="show()">다시호출</button>
+</body>
+</html>
+<script>
+// hide()    
+    let text = document.querySelector('.text');
+    let bt = document.querySelector('.bt')    
+    let bt2 = document.querySelector('.bt2')    
+
+    function hide(){
+        text.style.display="none";
+    }
+// show()
+    function show(){
+        text.style.display="block";
+        bt2.style.display="block";
+    }
+</script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      color : red;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="js1">자바스크립트 실습 예제</div>
+  <button onclick="clickEvent()">클릭</button>
+  <button id="btn1">클릭2</button>
+  <br><br>
+  <div class="js2">클릭 예제 22</div>
+</body>
+</html>
+<script>
+
+  // var obj = document.querySelector('#btn1');
+  // btn1.onclick = function(){
+  //   var obj = document.querySelector('#js1');
+  //   obj.style.color = "blue";
+  // } 
+
+  // var btn = document.querySelector('#btn1');
+  // btn.onclick = function(){
+  //   var obj = document.querySelector('#js1');
+  //   obj.style.color = "blue";
+  // } 
+
+  // var btn = document.querySelector('#btn1');
+  // btn.onclick = function(){
+  //   btn.style.color = "white";
+  //   btn.style.backgroundColor = "black";
+  //   btn.style.fontSize = "30px";
+  // }
+
+
+  // function clickEvent(){
+  //   var obj = document.querySelector('#js1');
+  //   console.log(obj);
+  //   obj.style.color = "blue";
+  // }
+
+  // var obj = document.querySelector('.js2');
+  //   obj.onclick = function(){
+  //     obj.style.color = "blue";
+  //     obj.style.backgroundColor = "#ccc";
+  //     obj.style.border = "1px solid black"
+  //   }
+
+    // if문 + 변수 생성
+    // var count = 1;
+    // var obj = document.querySelector('.js2');  
+    // obj.onclick = function() {
+    //   if(count%2 == 1){
+    //     obj.style.color = "blue";
+    //   } else {
+    //     obj.style.color = "red";
+    //   }
+    //   count++;
+    //   obj.style.backgroundColor = "#ccc";
+    //   obj.style.border = "1px solid black"
+    // }
+      
+    var obj = document.querySelector('.js2');
+    obj.onclick = function(){
+      console.log(obj.style.color);
+      // obj.style.color = "blue"; 
+      if(obj.style.color == "blue") {
+        obj.style.color = "red"; 
+      } else {
+        obj.style.color = "blue"; 
+      }
+      obj.style.backgroundColor = "#ccc";
+      obj.style.border = "1px solid black"
+    }
+    
+    
+  
+</script>

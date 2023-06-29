@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr = ["javascript", 1, {name : '홍길동', phone : '1234'}, true];
+    // document.write(arr[2].name);
+    // document.write(arr[0] + "<br>");
+    // arr[0] = "html/css";
+    // arr[4] = "안녕";
+    // document.write(arr[0] + "<br>");
+    // document.write(arr[4] + "<br>");
+    document.write(arr + "<br>");
+    
+    // arr.push("안녕");
+    // arr[arr.length] = "자바";
+
+    // for (let i=0; i<arr.length; i++){
+    //     document.write("<div>"+ i + "번째" + arr[i] + "</div>");
+    // }
+
+    // for(let i in arr){
+    //     // document.write("<div>" + arr[i] + "</div>");
+    //     document.write("<div>" + (typeof arr[i]) + "</div>");
+    // }
+
+    for(let i in arr){
+        if(typeof arr[i] == "object"){
+            document.write("<div> 이름 :  " + arr[i].name + " , 핸드폰번호 : "+ arr[i].phone + "</div>");
+        }else {
+            document.write("<div>" + arr[i] + "</div>");
+        }
+    }
+</script>

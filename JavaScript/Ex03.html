@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var name = prompt("이름을 입력하세요 >> ");
+    var year = prompt("태어난 연도를 입력하세요 >> ");
+    var month = prompt("태어난 달을 입력하세요 >> ");
+
+    var time = new Date();
+    var y = time.getFullYear() - year;
+    var m = (time.getMonth()+1) - month;
+    if(month < 0){
+        year -= 1;
+        month = month + 12;
+    }
+    
+    document.write("<div style='color : blue; font-size : 20px;'>" + name + "님은 태어난지 " + y + "년" + m + "개월 지났습니다.")
+</script>

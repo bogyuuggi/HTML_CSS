@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지이이이입</title>
+</head>
+<body>
+    <div class="txt">
+       자바스크립트
+    </div>
+    <button onclick="ch()">과목변경</button>
+    <!-- <div>짱구는 못말려</div>
+    <ul>
+        <li class="liOdd">짱구</li>
+        <li>맹구</li>
+        <li class="liOdd">철수</li>
+        <li>훈이</li>
+        <li class="liOdd">유리</li>
+    </ul> -->
+</body> 
+</html>
+<script>
+    // function change(){
+    //     var obj = document.querySelector('.txt');
+    //     if(obj.innerText == "오라클 데이터베이스"){
+    //         obj.innerHTML = "<span style='color : red;'>자바스크립트</span>";
+    //     }else {
+    //         obj.innerHTML = "<span style='color : skyblue;'>오라클 데이터베이스</span>";
+    //     }
+    // }
+
+    function ch() {
+        let obj = document.querySelector(".txt");
+        if(obj.innerText == "오라클 데이터베이스") {
+            obj.innerHTML = "<span style='color : red;'>자바스크립트</span>";
+        } else {
+            obj.innerHTML = "<span style='color : skyblue;'>오라클 데이터베이스</span>";
+        }
+    }
+   
+   
+        // let obj2 = document.querySelector('.txt');
+        // obj.innerHTML = "자바 스크립트";
+        // txt.style.color = "skyblue";
+        // alert(obj2.innerHTML);
+
+    // let list = document.querySelectorAll("li.liOdd");
+
+    // for(let i in list){
+    //     list[i].style.color = "red";
+    // }
+
+    // document.write(document.title);
+
+//   let list = document.getElementsByClassName("liOdd");  
+//     for(let i in list){
+//         list[i].style.color = "red";
+//         document.write("<div style='color : red;'>" + list[i].innerHTML + "</div>");
+//     }
+</script>
